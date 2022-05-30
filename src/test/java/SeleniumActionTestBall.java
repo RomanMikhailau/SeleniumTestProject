@@ -9,6 +9,7 @@ public class SeleniumActionTestBall {
 
     WebDriver driver = new ChromeDriver();
 
+
     public void openWebsite() {
         driver.get("https://learn.javascript.ru/article/mouse-drag-and-drop/ball4/");
     }

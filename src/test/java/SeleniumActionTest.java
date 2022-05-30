@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 public class SeleniumActionTest {
     WebDriver driver = new ChromeDriver();
 
+
     public void openWebsite() {
         driver.get("http://pbclibrary.org/mousing/click3.htm");
     }

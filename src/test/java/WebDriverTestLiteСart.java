@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 public class WebDriverTestLiteСart {
     WebDriver driver = new ChromeDriver();
 
+
     public void openWebsite() {
         driver.get("https://litecart.stqa.ru/en/");
     }

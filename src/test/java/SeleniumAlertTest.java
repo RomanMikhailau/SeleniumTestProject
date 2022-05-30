@@ -11,6 +11,7 @@ public class SeleniumAlertTest {
     WebDriver driver = new ChromeDriver();
 
 
+
     public void openWebsiteAndClickToAlert() {
         driver.get("https://the-internet.herokuapp.com/");
         WebElement clickToAlert = driver.findElement(By.linkText("JavaScript Alerts"));
