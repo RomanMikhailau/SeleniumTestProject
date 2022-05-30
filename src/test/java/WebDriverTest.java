@@ -9,6 +9,7 @@ import java.util.List;
 public class WebDriverTest {
     WebDriver driver = new ChromeDriver();
 
+
     @Test
     public void webDriverTestClick() {
         driver.get("https://the-internet.herokuapp.com/");
