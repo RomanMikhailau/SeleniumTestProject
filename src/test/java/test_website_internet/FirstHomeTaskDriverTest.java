@@ -1,25 +1,23 @@
+package test_website_internet;
+
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class WebDriverTest {
-    WebDriver driver = new ChromeDriver();
-
+public class FirstHomeTaskDriverTest extends TestSetting {
 
     @Test
     public void webDriverTestClick() {
-        driver.get("https://the-internet.herokuapp.com/");
+        openWebsite();
         WebElement linkToCheckboxes = driver.findElement(By.linkText("Drag and Drop"));
         linkToCheckboxes.click();
     }
 
     @Test
     public void webDriverTestPrintLink() {
-        driver.get("https://the-internet.herokuapp.com/");
+        openWebsite();
         List<WebElement> allLinksOnThePage = driver.findElements(By.tagName("a"));
         int a = 0;
         for (WebElement link : allLinksOnThePage) {
